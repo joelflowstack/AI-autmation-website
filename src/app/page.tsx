@@ -11,6 +11,7 @@ import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 import CaseStudies from "@/components/sections/CaseStudies";
 import FloatingHUD from "@/components/effects/FloatingHUD";
+ import TerminalFeed from "@/components/sections/TerminalFeed";
 
 export default function Page() {
 
@@ -25,6 +26,8 @@ export default function Page() {
       <Services />
 
       <Process />
+      
+     <TerminalFeed />     
 
       <Showcase />
       
