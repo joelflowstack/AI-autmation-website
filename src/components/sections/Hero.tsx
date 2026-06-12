@@ -25,7 +25,10 @@ export default function Hero() {
             </p>
 
           <GlitchText
-  text="STOP LOSING LEADS TO SLOW RESPONSE TIMES"
+  text="YOUR NEXT
+EMPLOYEE
+IS AN AI
+SYSTEM"
   className="
   text-7xl
   font-black
