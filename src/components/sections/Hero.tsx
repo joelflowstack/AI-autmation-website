@@ -1,4 +1,4 @@
-import CyberButton from "../ui/CyberButton";
+import GlitchText from "../effects/GlitchText";
 
 export default function Hero() {
 
@@ -23,20 +23,15 @@ export default function Hero() {
               [ Status : Online ]
             </p>
 
-            <h1
-              className="
-              text-7xl
-              font-black
-              uppercase
-              rgb-shift
-              glitch
-              "
-            >
-              Stop Losing
-              Leads To
-              Slow Response
-              Times
-            </h1>
+          <GlitchText
+  text="STOP LOSING LEADS TO SLOW RESPONSE TIMES"
+  className="
+  text-7xl
+  font-black
+  uppercase
+  leading-none
+  "
+/>
 
             <p className="mt-8 text-lg max-w-xl">
               We build AI employees that answer,
