@@ -1,7 +1,75 @@
+"use client";
+
+import { useState } from "react";
+
 import CyberInput from "../ui/CyberInput";
 import CyberButton from "../ui/CyberButton";
 
 export default function Contact() {
+
+  const [loading, setLoading] =
+    useState(false);
+
+  const handleSubmit = async (
+    e: React.FormEvent
+  ) => {
+
+    e.preventDefault();
+
+    setLoading(true);
+
+    try {
+
+      const response =
+        await fetch("/api/contact", {
+
+          method: "POST",
+
+          headers: {
+            "Content-Type":
+              "application/json",
+          },
+
+          body: JSON.stringify({
+            name:
+              (
+                e.target as HTMLFormElement
+              ).name.value,
+
+            email:
+              (
+                e.target as HTMLFormElement
+              ).email.value,
+
+            company:
+              (
+                e.target as HTMLFormElement
+              ).company.value,
+
+            volume:
+              (
+                e.target as HTMLFormElement
+              ).volume.value,
+          }),
+        });
+
+      if (response.ok) {
+
+        alert(
+          "Lead submitted successfully."
+        );
+
+      }
+
+    } catch {
+
+      alert("Submission failed.");
+
+    }
+
+    setLoading(false);
+
+  };
 
   return (
 
@@ -14,29 +82,52 @@ export default function Contact() {
 
         <h2
           className="
-          text-center
           text-5xl
-          uppercase
           font-black
+          uppercase
+          text-center
           mb-16
           "
         >
-          Contact
+          Deploy AI
         </h2>
 
-        <div className="space-y-6">
+        <form
+          onSubmit={handleSubmit}
+          className="space-y-6"
+        >
 
-          <CyberInput placeholder="Name" />
+          <CyberInput
+            name="name"
+            placeholder="Name"
+          />
 
-          <CyberInput placeholder="Email" />
+          <CyberInput
+            name="email"
+            placeholder="Email"
+          />
 
-          <CyberInput placeholder="Company" />
+          <CyberInput
+            name="company"
+            placeholder="Company"
+          />
 
-          <CyberButton>
-            Book Strategy Call
+          <CyberInput
+            name="volume"
+            placeholder="Monthly Leads"
+          />
+
+          <CyberButton
+            type="submit"
+          >
+            {
+              loading
+                ? "PROCESSING..."
+                : "BOOK STRATEGY CALL"
+            }
           </CyberButton>
 
-        </div>
+        </form>
 
       </div>
 
