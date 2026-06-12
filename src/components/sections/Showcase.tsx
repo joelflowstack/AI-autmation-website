@@ -1,4 +1,5 @@
 import CyberCard from "../ui/CyberCard";
+import Counter from "../effects/Counter";
 
 export default function Showcase() {
 
