@@ -17,8 +17,7 @@ export default function CTA() {
           rgb-shift
           "
         >
-          READY TO REPLACE
-          MANUAL WORK?
+          THE FUTURE DOESN'T HIRE MORE STAFF IT DEPLOYS AI
         </h2>
 
         <p className="mt-10 text-xl">
