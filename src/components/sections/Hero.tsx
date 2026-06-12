@@ -27,10 +27,14 @@ export default function Hero() {
           <GlitchText
   text="YOUR NEXT EMPLOYEE IS AN AI SYSTEM"
   className="
-  text-7xl
-  font-black
-  uppercase
-  leading-none
+    font-heading
+    text-5xl
+    md:text-7xl
+    lg:text-8xl
+    font-black
+    uppercase
+    tracking-widest
+    leading-none
   "
 />
 
