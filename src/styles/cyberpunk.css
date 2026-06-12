@@ -1,0 +1,36 @@
+:root {
+
+  --background:#0a0a0f;
+  --foreground:#e0e0e0;
+
+  --card:#12121a;
+  --muted:#1c1c2e;
+
+  --accent:#00ff88;
+  --secondary:#ff00ff;
+  --tertiary:#00d4ff;
+
+  --border:#2a2a3a;
+
+  --neon:
+    0 0 5px #00ff88,
+    0 0 10px rgba(0,255,136,.4);
+
+  --neon-lg:
+    0 0 10px #00ff88,
+    0 0 20px rgba(0,255,136,.6),
+    0 0 40px rgba(0,255,136,.3);
+}
+
+.cyber-chamfer {
+  clip-path: polygon(
+    0 10px,
+    10px 0,
+    calc(100% - 10px) 0,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    0 calc(100% - 10px)
+  );
+}
