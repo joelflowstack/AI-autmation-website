@@ -20,7 +20,7 @@ export default function Showcase() {
 
         </div>
 
-        <CyberCard>
+        <CyberCard variant="holographic">
 
           <div className="grid lg:grid-cols-2 gap-12">
 
