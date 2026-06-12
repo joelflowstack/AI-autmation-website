@@ -41,7 +41,9 @@ export default function Page() {
       <Contact />
 
       <Footer />
-
+      
+      <FloatingHUD />
+      
     </main>
 
   );
