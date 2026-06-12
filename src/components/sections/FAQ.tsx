@@ -1,53 +1,92 @@
+"use client";
+
+import { useState } from "react";
+
 import CyberCard from "../ui/CyberCard";
 
 const faqs = [
+
   {
-    q: "How quickly can we launch?",
-    a: "Most systems launch within 7 days."
+    q: "How fast can we launch?",
+    a: "Usually within 7 days."
   },
+
   {
-    q: "Do you integrate with CRMs?",
-    a: "Yes. HubSpot, Salesforce and many more."
+    q: "Do you support CRM integrations?",
+    a: "Yes, including HubSpot and Salesforce."
   },
+
   {
-    q: "Can AI answer calls?",
-    a: "Yes. We build voice agents."
-  }
+    q: "Can AI answer phone calls?",
+    a: "Yes. Voice agents are supported."
+  },
+
 ];
 
 export default function FAQ() {
+
+  const [open, setOpen] =
+    useState<number | null>(null);
 
   return (
 
     <section className="py-32 px-6">
 
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-4xl mx-auto">
 
-        <div className="text-center mb-20">
-
-          <h2 className="text-5xl font-black uppercase">
-            FAQ
-          </h2>
-
-        </div>
+        <h2
+          className="
+          text-5xl
+          font-black
+          uppercase
+          text-center
+          mb-16
+          "
+        >
+          FAQ
+        </h2>
 
         <div className="space-y-6">
 
-          {faqs.map((faq) => (
+          {faqs.map(
+            (faq, index) => (
 
-            <CyberCard key={faq.q}>
+              <CyberCard
+                key={faq.q}
+              >
 
-              <div className="text-accent text-xl mb-3">
-                {faq.q}
-              </div>
+                <button
+                  onClick={() =>
+                    setOpen(
+                      open === index
+                        ? null
+                        : index
+                    )
+                  }
+                  className="
+                  w-full
+                  text-left
+                  text-accent
+                  text-xl
+                  "
+                >
+                  {faq.q}
+                </button>
 
-              <p>
-                {faq.a}
-              </p>
+                {open === index && (
 
-            </CyberCard>
+                  <div className="mt-4">
 
-          ))}
+                    {faq.a}
+
+                  </div>
+
+                )}
+
+              </CyberCard>
+
+            )
+          )}
 
         </div>
 
