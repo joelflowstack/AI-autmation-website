@@ -1,0 +1,38 @@
+body::before {
+
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  background:
+  repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,.3) 2px,
+    rgba(0,0,0,.3) 4px
+  );
+
+  pointer-events:none;
+
+  z-index:9999;
+}
+
+.cyber-grid {
+
+  background-image:
+    linear-gradient(
+      rgba(0,255,136,.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0,255,136,.03) 1px,
+      transparent 1px
+    );
+
+  background-size:50px 50px;
+
+}
