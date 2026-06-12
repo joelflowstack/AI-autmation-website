@@ -70,7 +70,8 @@ export default function Showcase() {
                 shadow-[0_0_40px_#00d4ff]
                 "
               >
-                AI CORE
+                import AICore from "../effects/AICore";
+                <AICore />
               </div>
 
             </div>
