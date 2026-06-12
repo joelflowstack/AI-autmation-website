@@ -9,6 +9,8 @@ import FAQ from "@/components/sections/FAQ";
 import CTA from "@/components/sections/CTA";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
+import CaseStudies from "@/components/sections/CaseStudies";
+import FloatingHUD from "@/components/effects/FloatingHUD";
 
 export default function Page() {
 
@@ -25,7 +27,9 @@ export default function Page() {
       <Process />
 
       <Showcase />
-
+      
+      <CaseStudies />
+      
       <Testimonials />
 
       <Pricing />
