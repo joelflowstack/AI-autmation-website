@@ -19,10 +19,31 @@ const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "AI Automation Agency",
+import type { Metadata }
+from "next";
+
+export const metadata: Metadata = {
+
+  title:
+    "AI Automation Agency",
+
   description:
-    "AI Employees That Work 24/7",
+    "Deploy AI employees that answer leads, book meetings, update CRMs and work 24/7.",
+
+  keywords: [
+
+    "AI Automation",
+
+    "AI Agency",
+
+    "AI Chatbots",
+
+    "AI Voice Agents",
+
+    "Business Automation",
+
+  ],
+
 };
 
 export default function RootLayout({
