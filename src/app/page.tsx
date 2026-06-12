@@ -1,3 +1,4 @@
+import Navbar from "@/components/sections/Navbar";
 import Hero from "@/components/sections/Hero";
 import Services from "@/components/sections/Services";
 import Process from "@/components/sections/Process";
@@ -6,7 +7,10 @@ import Pricing from "@/components/sections/Pricing";
 export default function Page() {
 
   return (
+
     <main>
+
+      <Navbar />
 
       <Hero />
 
@@ -17,5 +21,6 @@ export default function Page() {
       <Pricing />
 
     </main>
+
   );
 }
