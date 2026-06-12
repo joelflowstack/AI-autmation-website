@@ -25,10 +25,7 @@ export default function Hero() {
             </p>
 
           <GlitchText
-  text="YOUR NEXT
-EMPLOYEE
-IS AN AI
-SYSTEM"
+  text="YOUR NEXT EMPLOYEE IS AN AI SYSTEM"
   className="
   text-7xl
   font-black
@@ -46,8 +43,9 @@ SYSTEM"
 >
   <TypingText
     text="
-    We build AI employees that answer,
-    qualify and convert customers 24/7.
+    Deploy AI employees that answer leads,
+book meetings, update CRMs,
+follow up automatically and work 24/7..
     "
   />
 </div>
