@@ -1,4 +1,5 @@
 import GlitchText from "../effects/GlitchText";
+import TypingText from "../effects/TypingText";
 
 export default function Hero() {
 
@@ -33,10 +34,20 @@ export default function Hero() {
   "
 />
 
-            <p className="mt-8 text-lg max-w-xl">
-              We build AI employees that answer,
-              qualify and convert customers 24/7.
-            </p>
+            <div
+  className="
+  mt-8
+  text-lg
+  max-w-xl
+  "
+>
+  <TypingText
+    text="
+    We build AI employees that answer,
+    qualify and convert customers 24/7.
+    "
+  />
+</div>
 
             <div className="flex gap-4 mt-10">
 
