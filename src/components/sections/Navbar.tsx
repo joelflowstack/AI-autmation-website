@@ -1,4 +1,5 @@
 import CyberButton from "../ui/CyberButton";
+import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
 
@@ -64,9 +65,13 @@ export default function Navbar() {
 
         </nav>
 
-        <CyberButton>
-          Book Demo
-        </CyberButton>
+        <div className="hidden lg:block">
+  <CyberButton>
+    Book Demo
+  </CyberButton>
+</div>
+
+<MobileMenu />
 
       </div>
 
