@@ -43,7 +43,6 @@ export const metadata: Metadata = {
     "Business Automation",
 
   ],
-
 };
 
 export default function RootLayout({
