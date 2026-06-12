@@ -1,5 +1,13 @@
 import CyberCard from "../ui/CyberCard";
+import AnimatedSection
+from "../effects/AnimatedSection";
 
+<AnimatedSection>
+
+  <section
+    id="services"
+    className="py-32 px-6 cyber-grid"
+  >
 const services = [
   "AI Chatbots",
   "AI Voice Agents",
@@ -94,3 +102,6 @@ export default function Services() {
     </section>
   );
 }
+ </section>
+
+</AnimatedSection>
