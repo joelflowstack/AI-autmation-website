@@ -37,7 +37,8 @@ export default function Showcase() {
                 </div>
 
                 <div>
-                  Leads Captured: 1,284
+                  Leads Captured:
+                  <Counter target={1284} />
                 </div>
 
                 <div>
